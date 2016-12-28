@@ -12,6 +12,9 @@
         android:layout_height="wrap_content"
         android:text="Show Notification"
         android:id="@+id/showNotificationBut"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background"
         android:onClick="showNotification"/>
 
     <Button
@@ -19,6 +22,9 @@
         android:layout_height="wrap_content"
         android:text="Stop Notification"
         android:id="@+id/stopNotificationBut"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background"
         android:onClick="stopNotification"/>
 
     <Button
@@ -26,6 +32,9 @@
         android:layout_height="wrap_content"
         android:text="Show settings"
         android:id="@+id/showsettings"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background"
         android:onClick="showSettings"/>
 
     <Button
@@ -33,6 +42,9 @@
         android:layout_height="wrap_content"
         android:text="Alert in 5 Seconds"
         android:id="@+id/alertButton"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background"
         android:onClick="setAlarm"/>
 
     <Button
@@ -40,6 +52,9 @@
         android:layout_height="wrap_content"
         android:text="Download File"
         android:id="@+id/startServiceButton"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background"
         android:onClick="startFileService"/>
 
     <EditText
