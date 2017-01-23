@@ -14,6 +14,13 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import android.widget.Toast;
 
+/*A Foreground Service in android is a background service which keeps running even after the parent application is closed.
+
+        Use Cases:
+        – For downloading a file in background from a server.
+        – For playing songs in background in a music player app.
+        – For showing the status of Connection to the chat server for a chat messenger app.*/
+
 public class ForegroundService extends Service {
     private static final String LOG_TAG = "ForegroundService";
     public static boolean IS_SERVICE_RUNNING = false;
@@ -47,8 +54,15 @@ public class ForegroundService extends Service {
                 Constants.ACTION.STOPFOREGROUND_ACTION)) {
             Log.i(LOG_TAG, "Received Stop Foreground Intent");
             stopForeground(true);
+            //services can use their stopSelf(int) method to ensure
+            // the service is not stopped until started intents have been processed.
             stopSelf();
         }
+
+        // START_STICKY is used for services that are explicitly started and
+        // stopped as needed, while START_NOT_STICKY or START_REDELIVER_INTENT
+        // are used for services that should only remain running while
+        // processing any commands sent to them.
         return START_STICKY;
     }
 
@@ -89,6 +103,10 @@ public class ForegroundService extends Service {
                         pplayIntent)
                 .addAction(android.R.drawable.ic_media_next, "Next",
                         pnextIntent).build();
+        // A started service can use the startForeground(int, Notification) API
+        // to put the service in a foreground state, where the system considers
+        // it to be something the user is actively aware of and thus not a
+        // candidate for killing when low on memory.
         startForeground(Constants.NOTIFICATION_ID.FOREGROUND_SERVICE,
                 notification);
 
