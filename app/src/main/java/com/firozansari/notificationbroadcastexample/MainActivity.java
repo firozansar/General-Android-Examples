@@ -239,4 +239,20 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, SettingsActivity.class);
         startActivity(i);
     }
+
+    public void startForegroundService(View view) {
+        Button button = (Button) view;
+        Intent service = new Intent(MainActivity.this, ForegroundService.class);
+        if (!ForegroundService.IS_SERVICE_RUNNING) {
+            service.setAction(Constants.ACTION.STARTFOREGROUND_ACTION);
+            ForegroundService.IS_SERVICE_RUNNING = true;
+            button.setText("Stop Foreground Service");
+        } else {
+            service.setAction(Constants.ACTION.STOPFOREGROUND_ACTION);
+            ForegroundService.IS_SERVICE_RUNNING = false;
+            button.setText("Start Foreground Service");
+
+        }
+        startService(service);
+    }
 }

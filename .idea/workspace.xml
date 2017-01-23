@@ -5,32 +5,27 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d23a0b55-2c3a-472a-a899-ccebea781b4a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/Constants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/ForegroundService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_25_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_25_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
     </list>
     <ignored path="NotificationBroadcastExample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,69 +54,10 @@
       <file leaf-file-name="SettingsActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="docComment;class#SettingsActivity#0" expanded="false" />
-                <element signature="docComment;field#sBindPreferenceSummaryToValueListener#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="class#1588:3670" expanded="false" />
-                <element signature="method#onPreferenceChange#0;class#1588:3670" expanded="false" />
-                <element signature="docComment;method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="docComment;method#bindPreferenceSummaryToValue#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#bindPreferenceSummaryToValue#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#onCreate#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="docComment;method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="docComment;method#onIsMultiPane#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="e#5625#5626#0" expanded="false" />
-                <element signature="e#5668#5669#0" expanded="false" />
-                <element signature="docComment;method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="e#5712#5721#0" expanded="false" />
-                <element signature="method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="docComment;method#isValidFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#isValidFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="docComment;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#onCreate#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#onOptionsItemSelected#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="docComment;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#onCreate#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#onOptionsItemSelected#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="docComment;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#onCreate#0;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-                <element signature="method#onOptionsItemSelected#0;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pref_data_sync.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_data_sync.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+              <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
           </provider>
         </entry>
       </file>
@@ -141,12 +77,13 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="95" column="73" selection-start-line="95" selection-start-column="73" selection-end-line="95" selection-end-column="73" />
+            <state relative-caret-position="465">
+              <caret line="230" column="50" selection-start-line="230" selection-start-column="50" selection-end-line="230" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#MainActivity#0" expanded="true" />
                 <element signature="method#onCreate#0;class#MainActivity#0" expanded="true" />
+                <element signature="method#onResume#0;class#MainActivity#0" expanded="true" />
                 <element signature="e#2559#2849#0" expanded="true" />
                 <element signature="e#2848#2849#0" expanded="true" />
                 <element signature="method#onPause#0;class#MainActivity#0" expanded="true" />
@@ -154,9 +91,52 @@
                 <element signature="method#stopNotification#0;class#MainActivity#0" expanded="true" />
                 <element signature="method#setAlarm#0;class#MainActivity#0" expanded="true" />
                 <element signature="method#startFileService#0;class#MainActivity#0" expanded="true" />
-                <element signature="method#showFileContents#0;class#MainActivity#0" expanded="true" />
                 <element signature="method#showSettings#0;class#MainActivity#0" expanded="true" />
+                <element signature="method#startForegroundService#0;class#MainActivity#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForegroundService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/ForegroundService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="method#onStartCommand#0;class#ForegroundService#0" expanded="true" />
+                <element signature="method#showNotification#0;class#ForegroundService#0" expanded="true" />
+                <element signature="method#onDestroy#0;class#ForegroundService#0" expanded="true" />
+                <element signature="method#onBind#0;class#ForegroundService#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+              <folding>
+                <element signature="class#ACTION#0;class#Constants#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="607">
+              <caret line="62" column="46" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,6 +166,14 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="ASClass" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1934,13 +1922,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/pref_notification.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/Constants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/ForegroundService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/MainActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1924" />
+    <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="1891" />
     <option name="height" value="1119" />
@@ -1952,7 +1944,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -2023,6 +2015,24 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NotificationBroadcastExample" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
@@ -2071,6 +2081,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="device.picker.selection" value="5c6890d1" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.firozansari.notificationbroadcastexample" />
+    </key>
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -2380,13 +2395,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1924" y="23" width="1891" height="1119" extended-state="1" />
+    <frame x="4" y="23" width="1891" height="1119" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48055834" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2439,40 +2454,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;field#sBindPreferenceSummaryToValueListener#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#1588:3670" expanded="false" />
-            <element signature="method#onPreferenceChange#0;class#1588:3670" expanded="false" />
-            <element signature="docComment;method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#bindPreferenceSummaryToValue#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#bindPreferenceSummaryToValue#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#onIsMultiPane#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#5625#5626#0" expanded="false" />
-            <element signature="e#5668#5669#0" expanded="false" />
-            <element signature="docComment;method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#5712#5721#0" expanded="false" />
-            <element signature="method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#isValidFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#isValidFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2483,7 +2465,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#802#843#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2529,40 +2513,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;field#sBindPreferenceSummaryToValueListener#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#1588:3670" expanded="false" />
-            <element signature="method#onPreferenceChange#0;class#1588:3670" expanded="false" />
-            <element signature="docComment;method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#bindPreferenceSummaryToValue#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#bindPreferenceSummaryToValue#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#onIsMultiPane#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#5625#5626#0" expanded="false" />
-            <element signature="e#5668#5669#0" expanded="false" />
-            <element signature="docComment;method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#5712#5721#0" expanded="false" />
-            <element signature="method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#isValidFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#isValidFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2573,7 +2524,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#802#843#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2611,58 +2564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;field#sBindPreferenceSummaryToValueListener#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#1588:3670" expanded="false" />
-            <element signature="method#onPreferenceChange#0;class#1588:3670" expanded="false" />
-            <element signature="docComment;method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#bindPreferenceSummaryToValue#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#bindPreferenceSummaryToValue#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#onIsMultiPane#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#5625#5626#0" expanded="false" />
-            <element signature="e#5668#5669#0" expanded="false" />
-            <element signature="docComment;method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#5712#5721#0" expanded="false" />
-            <element signature="method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#isValidFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#isValidFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_data_sync.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -2717,10 +2618,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_data_sync.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="e#802#843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        <state relative-caret-position="750">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -2728,14 +2642,60 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/ForegroundService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="method#onStartCommand#0;class#ForegroundService#0" expanded="true" />
+            <element signature="method#showNotification#0;class#ForegroundService#0" expanded="true" />
+            <element signature="method#onDestroy#0;class#ForegroundService#0" expanded="true" />
+            <element signature="method#onBind#0;class#ForegroundService#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <element signature="class#ACTION#0;class#Constants#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="62" column="46" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/firozansari/notificationbroadcastexample/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="95" column="73" selection-start-line="95" selection-start-column="73" selection-end-line="95" selection-end-column="73" />
+        <state relative-caret-position="465">
+          <caret line="230" column="50" selection-start-line="230" selection-start-column="50" selection-end-line="230" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#MainActivity#0" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="true" />
+            <element signature="method#onResume#0;class#MainActivity#0" expanded="true" />
             <element signature="e#2559#2849#0" expanded="true" />
             <element signature="e#2848#2849#0" expanded="true" />
             <element signature="method#onPause#0;class#MainActivity#0" expanded="true" />
@@ -2743,8 +2703,8 @@
             <element signature="method#stopNotification#0;class#MainActivity#0" expanded="true" />
             <element signature="method#setAlarm#0;class#MainActivity#0" expanded="true" />
             <element signature="method#startFileService#0;class#MainActivity#0" expanded="true" />
-            <element signature="method#showFileContents#0;class#MainActivity#0" expanded="true" />
             <element signature="method#showSettings#0;class#MainActivity#0" expanded="true" />
+            <element signature="method#startForegroundService#0;class#MainActivity#0" expanded="true" />
           </folding>
         </state>
       </provider>

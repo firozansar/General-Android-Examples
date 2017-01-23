@@ -42,9 +42,13 @@
 
         <receiver android:name=".AlertReceiver"/>
 
-        <!-- Declare the service -->
+        <!-- Declare the services -->
         <service
             android:name=".FileService"
+            android:exported="false" />
+
+        <service
+            android:name=".ForegroundService"
             android:exported="false" />
 
     </application>

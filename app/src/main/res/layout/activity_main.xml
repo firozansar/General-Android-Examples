@@ -57,6 +57,16 @@
         android:background="@drawable/btn_background"
         android:onClick="startFileService"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Foreground Service"
+        android:id="@+id/startForegroundService"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background"
+        android:onClick="startForegroundService"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="350dp"
