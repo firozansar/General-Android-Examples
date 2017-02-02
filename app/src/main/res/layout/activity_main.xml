@@ -67,6 +67,16 @@
         android:background="@drawable/btn_background"
         android:onClick="startForegroundService"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Battery Status"
+        android:id="@+id/batteryStatus"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background"
+        android:onClick="showBatteryStatus"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="350dp"

@@ -266,4 +266,11 @@ public class MainActivity extends AppCompatActivity {
         }
         startService(service);
     }
+
+    public void showBatteryStatus(View view) {
+        Intent i = new Intent();
+        i.setClass(MainActivity.this, BatteryStatusActivity.class);
+        startActivity(i);
+
+    }
 }
