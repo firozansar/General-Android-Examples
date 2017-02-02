@@ -7,6 +7,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v4.content.LocalBroadcastManager;
@@ -109,34 +110,39 @@ public class MainActivity extends AppCompatActivity {
 
         // Builds a notification
         NotificationCompat.Builder notificBuilder = new NotificationCompat.Builder(this)
-                .setContentTitle("Message")
-                .setContentText("New Message")
+                .setContentTitle("Notifications Title")
+                .setContentText("Notification content")
+                .setSubText("tap to see details")
                 .setTicker("Alert New Message")
-                .setSmallIcon(R.drawable.ic_notifications_black_24dp);
+                .setSmallIcon(R.drawable.ic_notifications_black_24dp)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
 
-        // Define that we have the intention of opening MoreInfoNotification
-        Intent moreInfoIntent = new Intent(this, MoreInfoNotification.class);
+
+        // Define that we have the intention of opening MoreInfoNotifActivity
+        Intent moreInfoIntent = new Intent(this, MoreInfoNotifActivity.class);
 
         // Used to stack tasks across activites so we go to the proper place when back is clicked
         TaskStackBuilder tStackBuilder = TaskStackBuilder.create(this);
 
         // Add all parents of this activity to the stack
-        tStackBuilder.addParentStack(MoreInfoNotification.class);
+        tStackBuilder.addParentStack(MoreInfoNotifActivity.class);
 
         // Add our new Intent to the stack
         tStackBuilder.addNextIntent(moreInfoIntent);
 
         // Define an Intent and an action to perform with it by another application
         // FLAG_UPDATE_CURRENT : If the intent exists keep it but update it if needed
-        PendingIntent pendingIntent = tStackBuilder.getPendingIntent(0,
-                PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = tStackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        // or we could add other pending intent like
+        //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com/"));
+        //PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
         // Defines the Intent to fire when the notification is clicked
         notificBuilder.setContentIntent(pendingIntent);
 
         // Gets a NotificationManager which is used to notify the user of the background event
-        notificationManager =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
         // Post the notification
         notificationManager.notify(notifID, notificBuilder.build());
@@ -177,10 +183,15 @@ public class MainActivity extends AppCompatActivity {
 
         // set() schedules an alarm to trigger
         // Trigger for alertIntent to fire in 5 seconds
-        // FLAG_UPDATE_CURRENT : Update the Intent if active
-        alarmManager.set(AlarmManager.RTC_WAKEUP, alertTime,
-                PendingIntent.getBroadcast(this, 1, alertIntent,
-                        PendingIntent.FLAG_UPDATE_CURRENT));
+        //
+        //context Context: The Context in which this PendingIntent should perform the broadcast.
+        //requestCode int: Private request code for the sender
+        //intent Intent: The Intent to be broadcast.
+        //flags int: May be FLAG_ONE_SHOT, FLAG_NO_CREATE, FLAG_CANCEL_CURRENT, FLAG_UPDATE_CURRENT, FLAG_IMMUTABLE
+        //     or any of the flags as supported by Intent.fillIn() to control which unspecified parts of the intent
+        //     that can be supplied when the actual send happens. Here "FLAG_UPDATE_CURRENT" which update the Intent if active
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, alertIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        alarmManager.set(AlarmManager.RTC_WAKEUP, alertTime, pendingIntent);
 
     }
 
