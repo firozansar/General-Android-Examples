@@ -17,10 +17,9 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button showNotificationBut, stopNotificationBut, alertButton;
 
-    EditText downloadedEditText;
+    TextView textView;
 
     // Allows us to notify the user that something happened in the background
     NotificationManager notificationManager;
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         showNotificationBut = (Button) findViewById(R.id.showNotificationBut);
         stopNotificationBut = (Button) findViewById(R.id.stopNotificationBut);
         alertButton = (Button) findViewById(R.id.alertButton);
-        downloadedEditText = (EditText) findViewById(R.id.downloadedEditText);
+        textView = (TextView) findViewById(R.id.downloadedText);
 
         sendBroadcast(new Intent(this, SimpleWakefulReceiver.class));
 
@@ -235,7 +234,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // Put downloaded text into the EditText
-            downloadedEditText.setText(sb.toString());
+            textView.setText(sb.toString());
 
 
         } catch (FileNotFoundException e) {
