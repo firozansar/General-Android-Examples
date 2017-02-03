@@ -36,7 +36,7 @@ public class BatteryStatusActivity extends AppCompatActivity {
     public void onResume() {
         super.onResume();
 
-        IntentFilter intentFilter =new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+        IntentFilter intentFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
 
         registerReceiver(onBattery, intentFilter);
     }
