@@ -64,10 +64,9 @@ public class MainActivity extends AppCompatActivity {
         showNotificationBut = (Button) findViewById(R.id.showNotificationBut);
         stopNotificationBut = (Button) findViewById(R.id.stopNotificationBut);
         alertButton = (Button) findViewById(R.id.alertButton);
-
         downloadedEditText = (EditText) findViewById(R.id.downloadedEditText);
 
-
+        sendBroadcast(new Intent(this, SimpleWakefulReceiver.class));
     }
 
 

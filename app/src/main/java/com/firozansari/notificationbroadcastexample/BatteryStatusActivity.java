@@ -75,14 +75,11 @@ public class BatteryStatusActivity extends AppCompatActivity {
                     break;
 
                 case BatteryManager.BATTERY_STATUS_FULL:
-                    int plugged=
-                            intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
+                    int plugged= intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
 
-                    if (plugged == BatteryManager.BATTERY_PLUGGED_AC
-                            || plugged == BatteryManager.BATTERY_PLUGGED_USB) {
+                    if (plugged == BatteryManager.BATTERY_PLUGGED_AC || plugged == BatteryManager.BATTERY_PLUGGED_USB) {
                         status.setImageResource(R.drawable.full);
-                    }
-                    else {
+                    } else {
                         status.setImageResource(R.drawable.unplugged);
                     }
                     break;

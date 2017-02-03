@@ -10,6 +10,9 @@
     <!-- Permission to Send SMS -->
     <uses-permission android:name="android.permission.SEND_SMS"/>
 
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -48,8 +51,20 @@
                 android:value=".MainActivity"/>
         </activity>
 
-
+        <!-- Declare the receivers -->
         <receiver android:name=".AlertReceiver"/>
+
+        <receiver android:name="PollReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".SimpleWakefulReceiver"
+            android:label="@string/app_name"
+            android:enabled="true" >
+        </receiver>
 
         <!-- Declare the services -->
         <service
@@ -59,6 +74,10 @@
         <service
             android:name=".ForegroundService"
             android:exported="false" />
+
+        <service android:name=".WakefulIntentService" />
+
+        <service android:name=".SimpleWakefulService" />
 
     </application>
 
