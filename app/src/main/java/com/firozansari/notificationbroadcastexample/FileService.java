@@ -13,8 +13,8 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-// We use an IntentService to handle long running processes off the UI thread
-// Any new requests will wait for the 1st to end and it can't be interrupted
+// The IntentService can be used in long tasks usually with no communication to Main Thread.
+// If communication is required, can use Main Thread handler or broadcast intents.
 
 public class FileService extends IntentService {
 

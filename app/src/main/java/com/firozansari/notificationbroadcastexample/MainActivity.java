@@ -1,6 +1,7 @@
 package com.firozansari.notificationbroadcastexample;
 
 import android.app.AlarmManager;
+import android.app.DownloadManager;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -8,15 +9,19 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -40,17 +45,19 @@ import java.util.GregorianCalendar;
 
 public class MainActivity extends AppCompatActivity {
 
+    private DownloadManager downloadManager;
+
     Button showNotificationBut, stopNotificationBut, alertButton;
+
+    EditText downloadedEditText;
 
     // Allows us to notify the user that something happened in the background
     NotificationManager notificationManager;
 
     // Used to track notifications
-    int notifID = 33;
+    private int notifID = 33;
 
-    EditText downloadedEditText;
-
-    private BroadcastReceiver downloadReceiver;
+    private long Image_DownloadId;
 
     // Used to track if notification is active in the task bar
     boolean isNotificActive = false;
@@ -67,25 +74,18 @@ public class MainActivity extends AppCompatActivity {
         downloadedEditText = (EditText) findViewById(R.id.downloadedEditText);
 
         sendBroadcast(new Intent(this, SimpleWakefulReceiver.class));
+
     }
 
 
     @Override
     protected void onResume(){
         super.onResume();
-        // Is alerted when the IntentService broadcasts TRANSACTION_DONE
-        downloadReceiver = new BroadcastReceiver() {
 
-            // Called when the broadcast is received
-            @Override
-            public void onReceive(Context context, Intent intent) {
+        //set filter to only when download is complete and register broadcast receiver
+        IntentFilter filter = new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE);
+        LocalBroadcastManager.getInstance(this).registerReceiver(downloadImageReceiver, filter);
 
-                Log.e("FileService", "Service Received");
-
-                showFileContents();
-
-            }
-        };
 
         // Allows use to track when an intent with the id TRANSACTION_DONE is executed
         // We can call for an intent to execute something and then tell use when it finishes
@@ -98,8 +98,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        LocalBroadcastManager.getInstance(this)
-                .unregisterReceiver(downloadReceiver);
+
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(downloadReceiver);
+
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(downloadImageReceiver);
 
         super.onPause();
     }
@@ -196,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void startFileService(View view) {
 
-        // Create an intent to run the IntentService in the background
+        //The IntentService is triggered using an Intent, it spawns a new worker thread and the method onHandleIntent() is called on this thread.
         Intent intent = new Intent(this, FileService.class);
 
         // Pass the URL that the IntentService will download from
@@ -272,4 +274,62 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
 
     }
+
+    public void downloadImage(View view) {
+
+        Uri image_uri = Uri.parse("https://pixabay.com/static/uploads/photo/2015/08/07/00/41/lg-878843_960_720.jpg");
+        Image_DownloadId = DownloadData(image_uri);
+    }
+
+    private long DownloadData (Uri uri) {
+
+        long downloadReference;
+
+        downloadManager = (DownloadManager)getSystemService(DOWNLOAD_SERVICE);
+        DownloadManager.Request request = new DownloadManager.Request(uri);
+
+        //Setting title of request
+        request.setTitle("Image Download");
+
+        //Setting description of request
+        request.setDescription("Android image download using DownloadManager.");
+
+        //Set the local destination for the downloaded file to a path within the application's external files directory
+        request.setDestinationInExternalFilesDir(MainActivity.this, Environment.DIRECTORY_DOWNLOADS,"downloadedimage.jpg");
+
+        //Enqueue download and save the referenceId
+        downloadReference = downloadManager.enqueue(request);
+
+        return downloadReference;
+    }
+
+    private BroadcastReceiver downloadImageReceiver = new BroadcastReceiver() {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            //check if the broadcast message is for our Enqueued download
+            long referenceId = intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1);
+
+            if(referenceId == Image_DownloadId) {
+
+                Toast.makeText(getApplicationContext(), "Image download complete",
+                        Toast.LENGTH_LONG).show();
+            }
+
+        }
+    };
+
+    private BroadcastReceiver downloadReceiver = new BroadcastReceiver() {
+
+        // Called when the broadcast is received
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            Log.e("FileService", "Service Received");
+
+            showFileContents();
+
+        }
+    };
 }
