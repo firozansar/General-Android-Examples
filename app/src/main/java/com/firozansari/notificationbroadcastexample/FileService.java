@@ -45,6 +45,7 @@ public class FileService extends IntentService {
 
         // Broadcast an intent back to MainActivity when file is downloaded
         Intent i = new Intent(TRANSACTION_DONE);
+        i.putExtra("message", "This is my message!");
         //FileService.this.sendBroadcast(i);
         LocalBroadcastManager.getInstance(this).sendBroadcast(i);
 
