@@ -363,8 +363,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
 
-            Log.e("FileService", "Service Received");
-
+            String message = intent.getStringExtra("message");
+            Log.d("receiver", "Got message: " + message);
+            
             showFileContents();
 
         }
