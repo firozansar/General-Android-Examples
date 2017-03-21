@@ -28,7 +28,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Locale;
+import java.util.regex.Pattern;
 
 /**
  * Created by firoz on 01/12/2016.
@@ -93,6 +98,37 @@ public class MainActivity extends AppCompatActivity {
 
         // Prepare the main thread to receive a broadcast and act on it
         LocalBroadcastManager.getInstance(this).registerReceiver(downloadReceiver, intentFilter);
+
+        /// **** For sanitizing account name ********
+
+        /*final Pattern sSanitizeAccountNamePattern = Pattern.compile("(.).*?(.?)@");
+
+        String logSanitizedAccountName = sSanitizeAccountNamePattern
+                .matcher("firozansar@gmail.com").replaceAll("$1...$2@");
+
+        textView.setText(logSanitizedAccountName);*/
+
+        /// **** For displaying current date time in human readable format ********
+
+        //Using the Gregorian Calendar Class instead of Time Class to get current date
+        Calendar gc = new GregorianCalendar();
+        String _day1;
+        String _day2;
+        //Converting the integer value returned by Calendar.DAY_OF_WEEK to
+        //a human-readable String
+        _day1 = gc.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.UK);
+
+        //code for formatting the date
+        Date time = gc.getTime();
+        SimpleDateFormat shortDateFormat = new SimpleDateFormat("EEE MMM dd", Locale.UK);
+        _day2 = shortDateFormat.format(time);
+
+        //iterating to the next day
+        gc.add(Calendar.DAY_OF_WEEK, 1);
+
+        //displays "Format1: Friday Format2: Fri Nov 04"
+        textView.setText("Day of the week: " + _day1 + " - Date: " + _day2);
+
     }
 
     @Override
@@ -191,7 +227,9 @@ public class MainActivity extends AppCompatActivity {
         //     or any of the flags as supported by Intent.fillIn() to control which unspecified parts of the intent
         //     that can be supplied when the actual send happens. Here "FLAG_UPDATE_CURRENT" which update the Intent if active
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, alertIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        alarmManager.set(AlarmManager.RTC_WAKEUP, alertTime, pendingIntent);
+        //alarmManager.set(AlarmManager.RTC_WAKEUP, alertTime, pendingIntent);
+        // alternatively we can set repeating alarm
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, alertTime, 30000, pendingIntent);
 
     }
 
