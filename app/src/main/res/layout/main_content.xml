@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Notification"
+                android:id="@+id/showNotificationBut"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+                android:onClick="showNotification"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop Notification"
+                android:id="@+id/stopNotificationBut"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+                android:onClick="stopNotification"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show settings"
+                android:id="@+id/showsettings"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+                android:onClick="showSettings"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alert in 5 Seconds"
+                android:id="@+id/alertButton"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+                android:onClick="setAlarm"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Foreground Service"
+                android:id="@+id/startForegroundService"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+                android:onClick="startForegroundService"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Battery Status"
+                android:id="@+id/batteryStatus"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+                android:onClick="showBatteryStatus"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download Image using DM"
+                android:id="@+id/imageDownloader"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+                android:onClick="downloadImage"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download File"
+                android:id="@+id/startServiceButton"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+                android:onClick="startFileService"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/downloadedText"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

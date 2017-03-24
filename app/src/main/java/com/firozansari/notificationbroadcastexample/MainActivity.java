@@ -14,8 +14,10 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v4.content.LocalBroadcastManager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v4.app.NotificationCompat;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -33,7 +35,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Locale;
-import java.util.regex.Pattern;
 
 /**
  * Created by firoz on 01/12/2016.
@@ -70,6 +71,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Always cast your custom Toolbar here, and set it as the ActionBar.
+        Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(tb);
+
+        // Get the ActionBar here to configure the way it behaves.
+        final ActionBar ab = getSupportActionBar();
+        //ab.setHomeAsUpIndicator(R.drawable.ic_menu); // set a custom icon for the default home button
+        //ab.setDisplayShowHomeEnabled(true); // show or hide the default home button
+        ab.setDisplayHomeAsUpEnabled(true);
+        ab.setDisplayShowCustomEnabled(true); // enable overriding the default toolbar layout
+        ab.setDisplayShowTitleEnabled(false); // disable the default title element here (for centered title)
+
 
         // Initialize buttons
         showNotificationBut = (Button) findViewById(R.id.showNotificationBut);
@@ -227,9 +241,9 @@ public class MainActivity extends AppCompatActivity {
         //     or any of the flags as supported by Intent.fillIn() to control which unspecified parts of the intent
         //     that can be supplied when the actual send happens. Here "FLAG_UPDATE_CURRENT" which update the Intent if active
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, alertIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        //alarmManager.set(AlarmManager.RTC_WAKEUP, alertTime, pendingIntent);
+        alarmManager.set(AlarmManager.RTC_WAKEUP, alertTime, pendingIntent);
         // alternatively we can set repeating alarm
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, alertTime, 30000, pendingIntent);
+        //alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, alertTime, 30000, pendingIntent);
 
     }
 
