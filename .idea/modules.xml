@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NotificationBroadcastExample.iml" filepath="$PROJECT_DIR$/NotificationBroadcastExample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/General-Android-Examples.iml" filepath="$PROJECT_DIR$/.idea/modules/General-Android-Examples.iml" group="General-Android-Examples" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="General-Android-Examples/app" />
     </modules>
   </component>
 </project>
